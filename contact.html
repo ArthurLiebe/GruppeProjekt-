@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                   colors: {
+                      'text': '#180202',
+                      'background': '#fafafa',
+                      'primary': '#ffaa99',
+                      'secondary': '#e6e6e5'
+                  },
+                  fontSize: {
+                      sm: '0.750rem',
+                      base: '1rem',
+                      xl: '1.333rem',
+                      '2xl': '1.777rem',
+                      '3xl': '2.369rem',
+                      '4xl': '3.158rem',
+                      '5xl': '4.210rem',
+                  },
+                  fontFamily: {
+                      heading: 'DM Serif Display',
+                      body: 'DM Serif Display',
+                  },
+                  fontWeight: {
+                      normal: '400',
+                      bold: '700',
+                  },
+              },
+          },
+      };
+    </script>
+    <title>Friseur</title>
+  </head>
+  <body class="font-body">
+    <header class="font-body p-10 flex flex-wrap gap-8 items-center justify-between">
+      <h1 class="text-xl bg-primary p-2 rounded-md drop-shadow-md">Friseursalon Lilly</h1>
+      <nav>
+        <ul class="flex gap-10 text-xl">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="w-[122px] h-0"></div>
+    </header>
+    <main>
+      <section>
+        <div class="w-screen">
+          <figure >
+            <img src="./assets/img/pexels-cottonbro-3992870.jpg" alt="Friseurwerkzeug" class="h-[361px] object-cover w-full"/>
+          </figure>
+        </div>
+       </section>
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 grid-cols-1">
+            <div class="lg:mb-0 mb-10">
+                <div class="group w-full h-full">
+                    <div class="relative h-full">
+                        <img src="assets\img\BF.jpg" alt="ContactUs tailwind section" class="object-cover w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply"/>
+                        <h1 class="font-manrope text-bg-gray-50 text-4xl font-bold leading-10 absolute top-11 left-11">Kontaktiere uns</h1>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+                <h2 class="font-manrope text-2xl font-semibold leading-10 mb-11">Sichere deinen Termin</h2>
+            <input type="text" class="w-full h-12 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Name">
+                <input type="text" class="w-full h-12 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email">
+                <input type="text" class="w-full h-12 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Phone">
+                <div class="mb-10">
+                    <h4 class= "text-lg font-normal leading-7 mb-4">Wie erreichen wir dich am besten?</h4>
+                    <div class="flex">
+                        <div class="flex items-center mr-11">
+                            <input id="radio-group-1" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center">
+                            <label for="radio-group-1" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                                <span class="border border-gray-300 rounded-full mr-2 w-4 h-4  ml-2 "></span> E-Mail 
+                            </label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="radio-group-2" type="radio" name="radio-group" class="hidden checked:bg-no-repeat checked:bg-center checked:bg-indigo-100">
+                            <label for="radio-group-2" class="flex items-center cursor-pointer text-gray-500 text-base font-normal leading-6">
+                                <span class="border border-gray-300  rounded-full mr-2 w-4 h-4  ml-2 "></span> Telefon 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="w-full h-12 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Message">
+                <button class="w-full h-12 text-text text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-primary shadow-sm">Senden</button>
+        </div>
+        </div>
+    </section>
+  </main>   
+  <footer class="font-body p-12 bg-[#1d1d1d] flex justify-evenly flex-wrap gap-10">
+    <div>
+      <p class="text-xl !text-white">Friseursalon Lilly</p>
+      <div class="flex gap-5 mt-5 -ml-1">
+        <img src="assets\img\facebook-app-symbol.png" alt="facebook-app-symbol" class="size-8 invert">
+        <img src="assets\img\instagram-logo.png" alt="instagram-logo" class="size-8 invert">
+        <img src="assets\img\youtube.png" alt="youtube" class="size-8 invert">
+      </div>
+    </div>
+    <div class="flex">
+      <nav>
+        <ul class="flex flex-col gap-10">
+          <li class="!text-white"><a href="./index.html">Home</a></li>
+          <li class="!text-white"><a href="./services.html">Services</a></li>
+          <li class="!text-white"><a href="./contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <p class="text-xl mb-2 !text-white">Öffnungszeiten:</p>
+      <p class="!text-white">Mo-Fr: 10-20 Uhr</p>
+      <p class="!text-white">Sa: 10-18 Uhr</p>
+    </div>
+    <div>
+      <p class="text-xl !text-white">Addresse:</p>
+      <p class="!text-white">Berliner Straße 12</p>
+      <p class="mb-4 !text-white">80331 München</p>
+      <p class="!text-white">Telefon: 030-12345678</p>
+      <p class="!text-white">Email: lilly@salon.de</p>
+      
+    </div>
+  </footer>                           
+</body>
+</html>
